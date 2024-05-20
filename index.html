@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Registration</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="container">
+    <div class="title">Student Registration</div>
+    <div class="content">
+      <form action="connect.php" class="needs-validation" method="POST" onsubmit="return Validate()">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Name</span>
+            <input type="text" placeholder="Enter your name" name="name" id="name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Register ID</span>
+            <input type="text" placeholder="Enter your Register ID" name="id" id="id" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="email" placeholder="Enter your Email" name="email" id="email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Department</span>
+            <input type="text" placeholder="Enter your Department" name="dept" id="dept" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Year</span>
+            <input type="number" placeholder="Enter your Year" name="year" id="year" required>
+          </div>
+        </div>
+        <div class="gender-details">
+          <input type="radio" name="gender" value="m" id="dot-1" >
+          <input type="radio" name="gender" value="f" id="dot-2" >
+          <input type="radio" name="gender" value="o" id="dot-3" >
+          <span class="gender-title">Gender</span>
+          <div class="category">
+            <label for="dot-1">
+              <span class="dot one"></span>
+              <span class="gender">Male</span>
+            </label>
+            <label for="dot-2">
+              <span class="dot two"></span>
+              <span class="gender">Female</span>
+            </label>
+            <label for="dot-3">
+              <span class="dot three"></span>
+              <span class="gender">Others</span>
+            </label>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+      </form>
+        <form action="connect.php" method="POST">
+          <input type="submit" value="Show Tables" name="show_tables" class="Tables" >
+    </form>
+    </div>
+  </div>
+</body>
+</html>
